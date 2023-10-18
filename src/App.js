@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import Navbar from "./components/Navbar";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App = () => {
+	const [isScrolled, setIsScrolled] = useState(false);
+
+	useEffect(() => {
+		// Event handler for scroll
+		const handleScroll = () => {
+			if (window.scrollY > 0) {
+				setIsScrolled(true);
+			} else {
+				setIsScrolled(false);
+			}
+		};
+
+		// Attach the event listener
+		window.addEventListener("scroll", handleScroll);
+
+		// Cleanup the event listener on component unmount
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
+	return (
+		<main className={`container ${isScrolled ? "scrolled" : ""}`}>
+			<Navbar isScrolled={isScrolled}/>
+		</main>
+	);
+};
 
 export default App;
