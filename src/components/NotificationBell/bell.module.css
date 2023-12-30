@@ -1,0 +1,25 @@
+.bell{
+    width: 35px;
+    height: 35px;
+    background-color: #f9b52e3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.bell:hover i{
+    animation: ring .5s ease-in-out alternate infinite;
+}
+
+@keyframes ring {
+    0%{
+        transform: rotate(15deg);
+    }
+    /* 50%{
+        transform: rotate(0deg);
+    } */
+    100%{
+        transform: rotate(-15deg);
+    }
+}

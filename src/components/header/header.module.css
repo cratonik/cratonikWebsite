@@ -1,0 +1,34 @@
+
+header{
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.logo{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+header ul {
+    display: flex;
+}
+header ul li{
+    margin-right: 30px;
+    cursor: pointer;
+}
+.headerContact{
+    display: flex;
+    align-items: center;
+}
+.logoimg{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url("../../assets/image/logo-square-white.png");
+    background-size: cover;
+    margin-right:  10px;
+}
