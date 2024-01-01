@@ -18,24 +18,24 @@ const Header = () => {
 				Cratonik
 			</Link>
 			<ul className={style.menuOpener} style={{ right: menu }}>
-				<li>
+				<li onClick={() => setmenu('-100%')}>
 					<Link to="/">Our Story</Link>
 				</li>
-				<li>
+				<li onClick={() => setmenu('-100%')}>
 					<Link to="/">Solutions</Link>
 				</li>
-				<li>
+				<li onClick={() => setmenu('-100%')}>
 					<Link to="/">Pricing</Link>
 				</li>
-				<li>
+				<li onClick={() => setmenu('-100%')}>
 					<Link to="/">Journal</Link>
 				</li>
 			</ul>
 			<div className={style.headerContact}>
 				<BoldButton text="Start a Project" hide={menu} />
 				<BellNotification />
-				<div className={style.menu} onClick={handleMenu}>
-					<span className={style.menuIcon}></span>
+				<div className={style.menu} onClick={handleMenu} style={{height: menu !== 0 ? "": "2px", background: menu !== 0 ? "": "white", border: menu !== 0 ? "": "0px", transform: menu !== 0 ? "": "rotate(45deg)"}}>
+					<span className={style.menuIcon} style={{transform: menu !== 0 ? "": "rotate(90deg)"}}></span>
 				</div>
 			</div>
 		</header>

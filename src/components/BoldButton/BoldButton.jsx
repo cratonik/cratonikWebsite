@@ -6,7 +6,7 @@ const BoldButton = (props) => {
 		<Link
 			to="/contact"
 			className={style.button}
-			style={{ opacity: props.hide === 0 ? "0" : "1" }}
+			style={{ opacity: props.hide === 0 ? "0" : "1", display: props.hide === 0 ? "none" : "inherit" }}
 		>
 			{props.text}
 		</Link>

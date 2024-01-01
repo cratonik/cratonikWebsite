@@ -17,7 +17,8 @@
 @media only screen and (width < 580px) {
     .button{
         height: 28px;
-        font-size: 14px;
+        font-size: 11px;
+        font-weight: bold;
         padding: 0 16px;
     }
 }
