@@ -28,3 +28,8 @@
         transform: rotate(-15deg);
     }
 }
+@media only screen and (width < 1000px){
+    .bell{
+        display: none;
+    }
+}

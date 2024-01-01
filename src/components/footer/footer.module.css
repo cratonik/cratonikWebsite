@@ -3,9 +3,11 @@ footer{
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     min-height: 400px;
-    flex-wrap: wrap;
+    width: 80vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }   
 .footerLeft{
     flex-basis: 25%;
@@ -14,8 +16,11 @@ footer{
     flex-direction: column;
     height: max-content;
     justify-content: space-between;
-    min-height: 400px;
+    height: 100%;
+    width: fit-content;
+    min-height: 350px;
 }
+
 .logo{
     font-size: 30px;
     text-transform: uppercase;
@@ -36,7 +41,6 @@ footer{
     margin: 20px 0;
     font-weight: 600;
     line-height: 1.25;
-
 }
 .footerLeft span{
     font-size: 12px;
@@ -49,5 +53,39 @@ footer{
     justify-content: space-between;
 }
 .footerRight{
-    flex-basis: 45%;
+    padding: 0 30px;
+    flex-basis: 60%;
+}
+
+@media only screen and (width < 1267px){
+    footer{
+        width: 100vw;
+    }
+    .footerRight{
+        flex-basis: 60%;
+    }
+}
+
+@media only screen and (width < 850px){
+    .footerLinks{
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (width < 810px){
+    footer{
+        flex-direction: column;
+        padding: 40px 0;
+    }
+    .footerLeft{
+        min-height: 0;
+        margin-bottom: 50px;
+        margin: 40px;
+        margin-top: 0;
+    }
+    .footerLeft span{
+        display: none;
+    }
+    .tagLine{
+        font-size: 18px;
+    }
 }

@@ -7,9 +7,9 @@ const CTA = () => {
 			<div className={style.footerCTC}>
 				<img src={emoji} alt="Cratonik Call To Action" />
 				<form action="">
-					<label htmlFor="">Start a conversation</label>
+					<label htmlFor="conversation">Start a conversation</label>
 					<div className={style.formInputButton}>
-						<input type="text" placeholder="name@mail.com" />
+						<input id="conversation" type="text" placeholder="name@mail.com" />
 						<div className={style.formSubmitButton} >
 							<button>
 								<i className="fas fa-greater-than"></i>

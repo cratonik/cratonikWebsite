@@ -48,8 +48,14 @@ main {
 	padding: 20px 60px;
 	min-height: calc(100vh - 115px);
 	overflow-x: hidden;
-  border-radius: 20px;
-  margin: 10px 30px;
-  margin-top: 80px;
+	border-radius: 20px;
+	margin: 10px 30px;
+	margin-top: 80px;
 }
-
+@media only screen and (width < 580px) {
+	main{
+		margin: 10px 20px;
+		margin-top: 70px;
+		border-radius: 10px;
+	}
+}

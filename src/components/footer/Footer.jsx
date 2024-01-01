@@ -11,21 +11,21 @@ const Footer = () => {
 		<footer>
 			<div className={style.footerLeft}>
 				<div className={style.footerName}>
-                    <Link to="/" className={style.logo}>
-                        <div className={style.logoimg}></div>
-                        Cratonik
-                    </Link>
-                    <div className={style.tagLine}>
-                        Your trusted development & professional dev partner
-                    </div>
-                </div>
+					<Link to="/" className={style.logo}>
+						<div className={style.logoimg}></div>
+						Cratonik
+					</Link>
+					<div className={style.tagLine}>
+						Your trusted development & professional dev partner
+					</div>
+				</div>
 				<span>&copy; {currentYear} Cratonik</span>
 			</div>
 			<div className={style.footerRight}>
 				<div className={style.footerLinks}>
 					<Linkbox />
 					<Linkbox />
-					<div className={styles.linkBox} >
+					<div className={styles.linkBox}>
 						<h3>Follow Us</h3>
 						<ul>
 							<li>
@@ -38,9 +38,11 @@ const Footer = () => {
 								</Link>
 							</li>
 							<li>
-								<Link to="https://www.instagram.com/chaitanyashimpi/"
-									target="_blank">
-									Instagram <i className="fab fa-instagram"></i>
+								<Link
+									to="https://www.instagram.com/chaitanyashimpi/"
+									target="_blank"
+								>
+									Instagram<i className="fab fa-instagram"></i>
 								</Link>
 							</li>
 						</ul>

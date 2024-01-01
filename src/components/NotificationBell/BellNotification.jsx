@@ -6,6 +6,7 @@ const BellNotification = () => {
         <i className="far fa-bell"></i>
     </div>
   )
+  
 }
 
 export default BellNotification

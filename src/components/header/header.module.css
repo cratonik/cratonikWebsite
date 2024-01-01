@@ -1,44 +1,108 @@
-
-header{
-    height: 80px;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: fixed;
-    top: 0;
-    right: 0;
-    background: #191923;
-    color: #fff;
+header {
+	height: 80px;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: #191923;
+	color: #fff;
 }
-.logo{
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
+.logo {
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: 600;
+	display: flex;
+	align-items: center;
 }
-.logoimg{
-    width: 40px;
-    height: 40px;
-    display: block;
-    background: url("../../assets/image/logo-square-white.png");
-    background-size: cover;
-    margin-right:  10px;
+.logoimg {
+	width: 40px;
+	height: 40px;
+	display: block;
+	background: url("../../assets/image/logo-square-white.png");
+	background-size: cover;
+	margin-right: 10px;
 }
 header ul {
-    display: flex;
+	display: flex;
 }
-header ul li{
-    margin-right: 30px;
-    cursor: pointer;
-    padding: 3px 10px;
+header ul li {
+	margin-right: 30px;
+	cursor: pointer;
+	padding: 3px 10px;
 }
-header ul li:last-child{
-    margin-right: 0;
+header ul li:last-child {
+	margin-right: 0;
 }
 
-.headerContact{
-    display: flex;
-    align-items: center;
+.headerContact {
+	display: flex;
+	align-items: center;
+}
+.menu {
+	display: none;
+}
+@media only screen and (width < 1000px) {
+	header {
+		justify-content: space-between;
+		padding: 0 40px;
+	}
+	header ul {
+		padding-top: 30px;
+		position: fixed;
+		flex-direction: column;
+		top: 80px;
+		right: -100%;
+		width: 100%;
+		background-color: #191923;
+		height: 100vh;
+	}
+
+	header ul li {
+		padding: 16px 0 16px 20px;
+		font-size: 18px;
+		border-bottom: 1px solid #ffffff2d;
+		width: 100%;
+	}
+	header ul li:hover {
+		background-color: rgba(255, 255, 255, 0.116);
+	}
+	.menuIcon {
+		display: block;
+		width: 19px;
+		height: 1px;
+		background-color: #fff;
+		position: relative;
+		cursor: pointer;
+	}
+	.menu {
+		cursor: pointer;
+		height: 15px;
+		width: 19px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		margin-left: 30px;
+	}
+}
+
+@media only screen and (width < 580px) {
+	header {
+		height: 60px;
+	}
+	header ul {
+		top: 50px;
+	}
+
+	.logo {
+		font-size: 23px;
+	}
+	.logoimg {
+		width: 20px;
+		height: 20px;
+	}
 }
