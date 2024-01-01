@@ -1,0 +1,27 @@
+.linkBox {
+	margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.linkBox h3 {
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.linkBox li {
+	line-height: 33px;
+	color: #9c9ea5;
+    transition: 0s ;
+}
+.linkBox li:hover{
+    color: #f9b52e;
+
+}
+.linkBox li::before {
+	content: ">";
+	margin-right: 10px;
+}
+.linkBox i{
+    margin-left: 10px;
+}

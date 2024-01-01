@@ -4,30 +4,33 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-
-
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
 import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
+import Contact from './pages/contact/Contact';
+
+
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <>
       <Header />
-      <div className='mainSection'>
-        <App />
-      </div>
+      <App />
+      <Footer />
     </>,
   },
   {
     path: "/contact",
     element: <>
       <Header />
-      <div className='mainSection'>Contact</div>
+      <Contact />
+      <Footer />
     </>,
   },
 ]);

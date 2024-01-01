@@ -3,11 +3,15 @@ import style from "./header.module.css";
 import BoldButton from "../BoldButton/BoldButton";
 import BellNotification from "../NotificationBell/BellNotification";
 
+
 const Header = () => {
+
+
+
 	return (
-		<header style={{ background: "#191923", color: "#fff" }}>
+		<header>
 			<Link to="/" className={style.logo}>
-        <div className={style.logoimg}></div>
+				<div className={style.logoimg}></div>
 				Cratonik
 			</Link>
 			<ul>
