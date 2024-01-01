@@ -1,7 +1,7 @@
 .bell{
     width: 35px;
     height: 35px;
-    background-color: #f9b52e3a;
+    background-color: #f9b52e2d;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,6 +15,22 @@
 }
 .bell:hover{
     border: 1px solid #fffffe6b;
+}
+.bell i{
+    position: relative;
+    font-size: 18px;
+}
+
+.beller{
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: 1px solid #413525;
+    position: absolute;
+    top: 3px;
+    right: 1px;
 }
 
 @keyframes ring {
