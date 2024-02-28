@@ -8,6 +8,8 @@
     margin: 0 10px;
     cursor: pointer;
     transition: 0s;
+    position: relative;
+    border: 1px solid transparent;
 }
 
 .bell:hover i{
@@ -33,6 +35,44 @@
     right: 1px;
 }
 
+.notifications{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    color: black;
+    min-width: 450px;
+    min-height: 500px;
+    padding: 20px;
+}
+.noti{
+    border-radius: 5px;
+    color: black;
+    font-size: 12px;
+    padding: 10px;
+}
+.notiType{
+    text-transform: uppercase;
+    color: #f9b52e;
+    font-weight: bold;
+}
+.noti:hover{
+    background-color: #f9b52e3b;
+}
+.hidden{
+    display: none;
+}
+.notificationDetails{
+    display: flex;
+    padding: 10px 0;
+
+}
+.notificationPargraph{
+    padding: 0 10px;
+}
+.notificationTitle{
+    font-size: 16px;
+}
 @keyframes ring {
     0%{
         transform: rotate(15deg);
