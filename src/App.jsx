@@ -1,5 +1,5 @@
-import "./App.module.css";
 import "./index.css";
+// import style from './App.module.css'
 
 function App() {
 	return (

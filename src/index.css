@@ -25,13 +25,16 @@
 ::-webkit-scrollbar-thumb:hover {
 	background: #555;
 }
+
 a {
 	text-decoration: none;
 	color: inherit;
 }
+
 li {
 	list-style: none;
 }
+
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;
@@ -41,6 +44,22 @@ body {
 	background-color: #191923;
 	overflow-x: hidden;
 	width: 100vw;
+	/* cursor: none; */
+}
+
+.cursor {
+	position: relative;
+}
+
+.cursor::before {
+	content: '';
+	position: absolute;
+	width: 20px; /* Adjust size as needed */
+	height: 20px; /* Adjust size as needed */
+	background-color: #fff; /* Change color as needed */
+	border-radius: 50%; /* Shape as a circle */
+	transform: translate(-50%, -50%);
+	pointer-events: none; /* Ensure the pseudo-element doesn't interfere with mouse events */
 }
 main {
 	color: #fff;
@@ -52,8 +71,9 @@ main {
 	margin: 10px 30px;
 	margin-top: 80px;
 }
+
 @media only screen and (width < 580px) {
-	main{
+	main {
 		margin: 10px 20px;
 		margin-top: 70px;
 		border-radius: 10px;

@@ -12,7 +12,7 @@ import "./index.css";
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Contact from './pages/contact/Contact';
-
+import Cursor from './components/Cursor/Cusor';
 
 
 
@@ -20,6 +20,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <>
+      <Cursor />
       <Header />
       <App />
       <Footer />
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
   {
     path: "/start-a-project",
     element: <>
+      <Cursor />
       <Header />
       <Contact />
       <Footer />

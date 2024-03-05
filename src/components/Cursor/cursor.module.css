@@ -1,0 +1,65 @@
+/* Cursor.css */
+* {
+    cursor: none;
+}
+
+/* Cursor.css */
+
+.cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #f9b52e;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    animation: glow .6s alternate infinite;
+    transition: none;
+}
+
+.cursor.clicked{
+    /* transform: scale(1); */
+    animation: clickgrow .6s alternate, glow .6s alternate infinite;
+}
+
+@keyframes clickgrow{
+    0%{
+        transform: scale(1) rotate(0deg);
+    }
+    50%{
+        transform: scale(1.5) rotate(120deg)
+    }
+    100%{
+        transform: scale(1) rotate(0deg); 
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 0 #f9b52e;
+    }
+
+    100% {
+        box-shadow: 0 0 10px #f9b52e, 0 0 10px #f9b52e, 0 0 10px #f9b52e;
+    }
+}
+
+
+.cursor::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ffffff70;
+    top: -110%;
+    left: -110%;
+    border-radius: 30%;
+}
+
+.cursor::after.clicked{
+    width: 4px;
+    height: 4px;
+}

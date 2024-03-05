@@ -3,6 +3,7 @@ import style from "./header.module.css";
 import BoldButton from "../BoldButton/BoldButton";
 import BellNotification from "../NotificationBell/BellNotification";
 import { useState } from "react";
+import Cursor from "../Cursor/Cusor";
 
 const Header = () => {
 	const [menu, setmenu] = useState("-100%");
@@ -13,6 +14,7 @@ const Header = () => {
 
 	return (
 		<header>
+			
 			<Link to="/" className={style.logo}>
 				<div className={style.logoimg}></div>
 				Cratonik
@@ -32,10 +34,10 @@ const Header = () => {
 				</li>
 			</ul>
 			<div className={style.headerContact}>
-				<BoldButton link="/start-a-project" text="Start a Project" hide={menu} />
+				<BoldButton link="/start-a-project" className={style.trial} text="Start a Project" hide={menu} />
 				<BellNotification />
-				<div className={style.menu} onClick={handleMenu} style={{height: menu !== 0 ? "": "2px", background: menu !== 0 ? "": "white", border: menu !== 0 ? "": "0px", transform: menu !== 0 ? "": "rotate(45deg)"}}>
-					<span className={style.menuIcon} style={{transform: menu !== 0 ? "": "rotate(90deg)"}}></span>
+				<div className={style.menu} onClick={handleMenu} style={{ height: menu !== 0 ? "" : "2px", background: menu !== 0 ? "" : "white", border: menu !== 0 ? "" : "0px", transform: menu !== 0 ? "" : "rotate(45deg)" }}>
+					<span className={style.menuIcon} style={{ transform: menu !== 0 ? "" : "rotate(90deg)" }}></span>
 				</div>
 			</div>
 		</header>
