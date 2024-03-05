@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import style from './cursor.module.css';
 
 const Cursor = () => {
     const [position, setPosition] = useState({ x: "50%", y: "50%" });
     const [clicked, setClicked] = useState(false);
-    let clickTimeout;
+    const clickTimeout = useRef(null); // Use useRef for mutable values
 
     useEffect(() => {
         const handleMouseMove = (e) => {
@@ -13,18 +13,18 @@ const Cursor = () => {
 
         const handleMouseDown = () => {
             setClicked(true); // Set clicked to true when mouse button is pressed down
-            if (clickTimeout) {
-                clearTimeout(clickTimeout); // Clear the existing timeout if another click occurs
+            if (clickTimeout.current) {
+                clearTimeout(clickTimeout.current); // Clear the existing timeout if another click occurs
             }
         };
 
         const handleMouseUp = () => {
             setClicked(true);
-            if (clickTimeout) {
-                clearTimeout(clickTimeout);
+            if (clickTimeout.current) {
+                clearTimeout(clickTimeout.current);
             }
             
-            clickTimeout = setTimeout(() => {
+            clickTimeout.current = setTimeout(() => {
                 setClicked(false);
             }, 300); 
         };

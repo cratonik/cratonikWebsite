@@ -3,7 +3,7 @@ import style from "./header.module.css";
 import BoldButton from "../BoldButton/BoldButton";
 import BellNotification from "../NotificationBell/BellNotification";
 import { useState } from "react";
-import Cursor from "../Cursor/Cusor";
+
 
 const Header = () => {
 	const [menu, setmenu] = useState("-100%");
