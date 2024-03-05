@@ -29,6 +29,8 @@
 a {
 	text-decoration: none;
 	color: inherit;
+	cursor: none !important;
+
 }
 
 li {
@@ -45,21 +47,6 @@ body {
 	overflow-x: hidden;
 	width: 100vw;
 	/* cursor: none; */
-}
-
-.cursor {
-	position: relative;
-}
-
-.cursor::before {
-	content: '';
-	position: absolute;
-	width: 20px; /* Adjust size as needed */
-	height: 20px; /* Adjust size as needed */
-	background-color: #fff; /* Change color as needed */
-	border-radius: 50%; /* Shape as a circle */
-	transform: translate(-50%, -50%);
-	pointer-events: none; /* Ensure the pseudo-element doesn't interfere with mouse events */
 }
 main {
 	color: #fff;

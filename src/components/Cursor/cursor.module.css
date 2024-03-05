@@ -1,65 +1,53 @@
-/* Cursor.css */
+/* cursor.module.css */
+
 * {
-    cursor: none;
+    cursor: none; 
 }
 
-/* Cursor.css */
+.cursor_f {
+    position: fixed;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #ffffff54;
+    background-color: transparent;
+    border-radius: 25%; 
+    z-index: 9998; 
+    pointer-events: none;
+    transition: none; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
 
 .cursor {
-    position: fixed;
+    position: absolute;
     width: 10px;
     height: 10px;
     background-color: #f9b52e;
     border-radius: 50%;
     pointer-events: none;
-    z-index: 9999;
-    top: 50%;
-    left: 50%;
-    animation: glow .6s alternate infinite;
-    transition: none;
-}
+    transition: none; 
+    z-index: 9999; 
+    margin-top: 13px;
+    margin-left: 13px;
+    animation: glow .6 alternate infinite;
+    box-shadow: 0 0 10px #f9b52e, 0 0 10px #f9b52e, 0 0 10px #f9b52e;
 
-.cursor.clicked{
-    /* transform: scale(1); */
-    animation: clickgrow .6s alternate, glow .6s alternate infinite;
-}
-
-@keyframes clickgrow{
-    0%{
-        transform: scale(1) rotate(0deg);
-    }
-    50%{
-        transform: scale(1.5) rotate(120deg)
-    }
-    100%{
-        transform: scale(1) rotate(0deg); 
-    }
 }
 
 @keyframes glow {
-    0% {
+    from {
         box-shadow: 0 0 0 #f9b52e;
     }
-
-    100% {
-        box-shadow: 0 0 10px #f9b52e, 0 0 10px #f9b52e, 0 0 10px #f9b52e;
+    to {
+        box-shadow: 0 0 20px #f9b52e, 0 0 20px #f9b52e, 0 0 20px #f9b52e;
     }
 }
 
-
-.cursor::after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #ffffff70;
-    top: -110%;
-    left: -110%;
-    border-radius: 30%;
+.cursor.linkHover{
+    background-color: red;
 }
 
-.cursor::after.clicked{
-    width: 4px;
-    height: 4px;
+.cursor_f.linkHover{
+    border-color: black;
 }
