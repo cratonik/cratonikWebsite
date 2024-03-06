@@ -4,7 +4,7 @@ import HeadingTitle from '../../components/HeadingTitle/HeadingTitle'
 const Contact = () => {
   return (
     <main>
-      {/* <HeadingTitle title="Start a Project"/> */}
+      <HeadingTitle title="Start a Project"/>
     </main>
   )
 }
