@@ -24,9 +24,10 @@ const Cursor = () => {
             cursor.style.top = (e.clientY-17) + 'px';
             cursorF.style.left = (e.clientX-18) + 'px';
             cursorF.style.top = (e.clientY-17) + 'px';
-
-            // Check if cursor is hovering over a link
+            
+            
             const hoveredElement = document.elementFromPoint(e.clientX, e.clientY);
+            // Check if cursor is hovering over a link
             if (hoveredElement && hoveredElement.tagName.toLowerCase() === 'a') {
                 cursor.classList.add(style.linkHover); // Apply link hover styling
                 cursorF.classList.add(style.linkHover); // Apply link hover styling
@@ -37,13 +38,13 @@ const Cursor = () => {
         };
 
         const handleMouseDown = () => {
-            gsap.to(cursor, { scale: 2.5 });
-            gsap.to(cursorF, { scale: 0.4, rotation: 120 });
+                gsap.to(cursor, { scale: 2.5 });
+                gsap.to(cursorF, { scale: 0.4, rotation: 120 });
         };
-
+        
         const handleMouseUp = () => {
-            gsap.to(cursor, { scale: 1 });
-            gsap.to(cursorF, { scale: 1 , rotate: 0});
+                gsap.to(cursor, { scale: 1 });
+                gsap.to(cursorF, { scale: 1 , rotate: 0});
         };
 
         window.addEventListener('mousemove', handleMouseMove);

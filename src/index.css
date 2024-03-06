@@ -1,9 +1,12 @@
+@import "./variable.css";
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: Poppins;
 	transition: 0.2s ease-in-out;
+	cursor: none !important;
 }
 
 /* width */
@@ -18,7 +21,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #f9b52e;
+	background: var(--spot-color);
 }
 
 /* Handle on hover */
@@ -30,7 +33,6 @@ a {
 	text-decoration: none;
 	color: inherit;
 	cursor: none !important;
-
 }
 
 li {
@@ -43,14 +45,14 @@ code {
 }
 
 body {
-	background-color: #191923;
+	background-color: var(--primary-blue);
 	overflow-x: hidden;
 	width: 100vw;
 	/* cursor: none; */
 }
 main {
 	color: #fff;
-	background-color: #252532;
+	background-color: var(--secondary-blue);
 	padding: 20px 60px;
 	min-height: calc(100vh - 115px);
 	overflow-x: hidden;

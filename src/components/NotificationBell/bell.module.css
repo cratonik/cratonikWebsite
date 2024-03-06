@@ -1,7 +1,9 @@
+@import "../../variable.css";
+
 .bell{
     width: 35px;
     height: 35px;
-    background-color: #f9b52e2d;
+    background-color: var(--spot-light-hover);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,13 +27,13 @@
 
 .beller{
     display: block;
-    width: 6px;
-    height: 6px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
-    background-color: yellow;
+    background-color: var(--spot-color);
     border: 1px solid #413525;
     position: absolute;
-    top: 3px;
+    top: 1px;
     right: 1px;
 }
 
@@ -61,14 +63,14 @@ hr{
 }
 .notiType{
     text-transform: uppercase;
-    color: #f9b52e;
+    color: var(--spot-color);
     font-weight: bold;
     width: 100%;
     font-size: 12px;
     letter-spacing: .8px;
 }
 .noti:hover{
-    background-color: #f9b52e3b;
+    background-color: var(--spot-light-hover);
 }
 .hidden{
     display: none;
@@ -100,6 +102,7 @@ hr{
     color: rgba(0, 0, 0, 0.466);
     font-size: 15px;
 }
+
 .notificationGo{
     font-size: 20px;
     font-weight: bold;

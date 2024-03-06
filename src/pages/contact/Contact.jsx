@@ -1,8 +1,11 @@
 import React from 'react'
+import HeadingTitle from '../../components/HeadingTitle/HeadingTitle'
 
 const Contact = () => {
   return (
-    <main>Contact</main>
+    <main>
+      {/* <HeadingTitle title="Start a Project"/> */}
+    </main>
   )
 }
 

@@ -26,11 +26,11 @@
 }
 .footerCTC input:hover,
 .footerCTC input:hover + .formSubmitButton {
-	border-color: #f9b52e48;
+	border-color: var(--spot-hover);
 }
 .footerCTC input:focus,
 .footerCTC input:focus + .formSubmitButton {
-	border-color: #f9b52e;
+	border-color: var(--spot-color);
 }
 .formInputButton {
 	display: flex;
@@ -39,7 +39,7 @@
 	border-bottom: 1px solid #ffffff2d;
 }
 .footerCTC button {
-	background-color: #f9b52e;
+	background-color: var(--spot-color);
 	border: none;
 	outline: none;
 	width: 25px;

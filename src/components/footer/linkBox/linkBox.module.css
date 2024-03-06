@@ -1,3 +1,5 @@
+@import "../../../variable.css";
+
 .linkBox {
 	margin-right: 20px;
     margin-bottom: 30px;
@@ -15,7 +17,7 @@
     transition: 0s ;
 }
 .linkBox li:hover{
-    color: #f9b52e;
+    color: var(--spot-color);
 
 }
 .linkBox li::before {

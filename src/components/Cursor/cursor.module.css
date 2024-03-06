@@ -1,7 +1,7 @@
 /* cursor.module.css */
-
+@import "../../variable.css";
 * {
-    cursor: none; 
+    cursor: none;
 }
 
 .cursor_f {
@@ -10,44 +10,61 @@
     height: 36px;
     border: 2px solid #ffffff54;
     background-color: transparent;
-    border-radius: 25%; 
-    z-index: 9998; 
+    border-radius: 25%;
+    z-index: 9998;
     pointer-events: none;
-    transition: none; 
+    transition: none;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
 .cursor {
-    position: absolute;
+    position: fixed;
     width: 10px;
     height: 10px;
-    background-color: #f9b52e;
+    background-color: var(--spot-color);
     border-radius: 50%;
     pointer-events: none;
-    transition: none; 
-    z-index: 9999; 
+    transition: none;
+    z-index: 9999;
     margin-top: 13px;
     margin-left: 13px;
     animation: glow .6 alternate infinite;
-    box-shadow: 0 0 10px #f9b52e, 0 0 10px #f9b52e, 0 0 10px #f9b52e;
+    box-shadow: 0 0 10px var(--spot-color), 0 0 10px var(--spot-color), 0 0 10px var(--spot-color);
 
 }
 
 @keyframes glow {
     from {
-        box-shadow: 0 0 0 #f9b52e;
+        box-shadow: 0 0 0 var(--spot-color);
     }
-    to {
-        box-shadow: 0 0 20px #f9b52e, 0 0 20px #f9b52e, 0 0 20px #f9b52e;
-    }
-}
 
-.cursor.linkHover{
-    background-color: red;
+    to {
+        box-shadow: 0 0 20px var(--spot-color), 0 0 20px var(--spot-color), 0 0 20px var(--spot-color);
+    }
 }
 
 .cursor_f.linkHover{
-    border-color: black;
+    border-radius: 50%;
+    outline: 2px solid black;
+    border-width: 2px;
+    border-color: rgba(255, 255, 255, 0.651);
 }
+.cursor.linkHover{
+    outline: 2px solid black;
+    border-width: 2px;
+}
+/* .cursor.linkHover {
+    background-color: red;
+}
+
+.cursor_f.linkHover {
+    height: 0;
+    width: 0;
+    border: 10px solid transparent;
+    border-top: 0;
+    border-bottom: 20px solid rgb(48, 80, 221);
+    border-radius: 0;
+    transform: rotate(-45deg);
+} */

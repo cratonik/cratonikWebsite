@@ -1,5 +1,7 @@
+@import "../../variable.css";
+
 .button{
-    background-color: #f9b52e;
+    background-color: var(--spot-color);
     color: #000;
     display: block;
     cursor: pointer;
@@ -12,7 +14,7 @@
 
 }
 .button:hover{
-    background: #ffd47e;
+    background: var(--spot-hover);
 }
 @media only screen and (width < 580px) {
     .button{

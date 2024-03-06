@@ -34,7 +34,7 @@ const Header = () => {
 				</li>
 			</ul>
 			<div className={style.headerContact}>
-				<BoldButton link="/start-a-project" className={style.trial} text="Start a Project" hide={menu} />
+				<BoldButton link="/contact" className={style.trial} text="Start a Project" hide={menu} />
 				<BellNotification />
 				<div className={style.menu} onClick={handleMenu} style={{ height: menu !== 0 ? "" : "2px", background: menu !== 0 ? "" : "white", border: menu !== 0 ? "" : "0px", transform: menu !== 0 ? "" : "rotate(45deg)" }}>
 					<span className={style.menuIcon} style={{ transform: menu !== 0 ? "" : "rotate(90deg)" }}></span>

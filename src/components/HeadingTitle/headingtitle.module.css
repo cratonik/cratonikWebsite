@@ -1,0 +1,24 @@
+@import "../../variable.css";
+
+.heading{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 18px;
+    border: 1px solid var(--spot-color);
+    display: inline-block;
+    padding: 3px 10px;
+    position: relative;
+    margin: 20px 0;
+}
+.heading::before{
+    content: '∆ Top-Heading';
+    position: absolute;
+    top: -20px;
+    left: -1px;
+    font-size: 13px;
+    text-transform: capitalize;
+    background-color: var(--spot-color);
+    padding: 0 10px;
+    color: #191923;
+}

@@ -1,3 +1,5 @@
+@import "../../variable.css";
+
 .button {
     background-color: transparent;
     border: 1px solid #ffffff52;
@@ -21,7 +23,7 @@
     z-index: 0;
     width: 130%;
     height: 300px;
-    background-color: #f9b52e;
+    background-color: var(--spot-color);
     position: absolute;
     bottom: -301px;
     border-radius: 50%;
@@ -29,7 +31,7 @@
 }
 
 .button:hover {
-    border: 1px solid #f9b52e;
+    border: 1px solid var(--spot-color);
     z-index: 101; 
     color: #000;
 }
