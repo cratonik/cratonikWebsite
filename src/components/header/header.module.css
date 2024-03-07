@@ -12,6 +12,7 @@ header {
 	right: 0;
 	background: var(--primary-blue);
 	color: #fff;
+	z-index: 9999;
 }
 a{
 	cursor: none !important;

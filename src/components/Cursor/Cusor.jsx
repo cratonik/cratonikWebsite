@@ -20,6 +20,11 @@ const Cursor = () => {
         }
 
         const handleMouseMove = (e) => {
+
+            if (!isFinite(e.clientX) || !isFinite(e.clientY)) {
+                return; // Exit early if coordinates are non-finite
+            }
+
             cursor.style.left = (e.clientX-18) + 'px';
             cursor.style.top = (e.clientY-17) + 'px';
             cursorF.style.left = (e.clientX-18) + 'px';

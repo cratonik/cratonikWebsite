@@ -1,0 +1,88 @@
+main{
+  z-index: 1;
+    padding: 20px 150px;
+}
+.ContactHeader{
+    height: 50vh;
+    /* background: url(https://source.unsplash.com/featured/300x201); */
+    background-repeat: no-repeat; 
+    position: relative;
+}
+.leftContactHeader{
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;  
+    
+    position: relative;  
+}
+.leftContactHeader::before{
+    content: '';
+    position: absolute;
+    background-color: red;
+    width: 0;
+    height: 0;
+    display: block;
+    /* border-radius: 80%; */
+    box-shadow: 0 0 90px 0  var(--primary-blue),
+            0 0 40px 0 var(--primary-blue),
+            0 0 120px 100px var(--primary-blue);
+    z-index: -1;
+}
+
+
+.leftContactHeader .contactme{
+    width: 30rem;
+    text-align: center;
+}
+.leftContactHeader .contactme span{
+    background-color: var(--spot-color);
+    color: var(--primary-blue);
+    padding: 0 5px;
+    text-transform: uppercase;
+}
+
+.movingTestimonial{
+    display: flex;
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    z-index: -2;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.movingTestimonial {
+    opacity: .2;
+}
+@media only screen and (width < 675px) {
+    main{
+          padding: 20px;
+      }
+      .ContactHeader, .leftContactHeader{
+        height: 40vh;
+      }
+      .leftContactHeader .contactme{
+        font-size: 18px;
+        width: 80%;
+      }
+}
+
+@media only screen and (width < 400px){
+    .ContactHeader, .leftContactHeader{
+        height: 23vh;
+    }
+    .leftContactHeader .contactme{
+        font-size: 15px;
+        width: 90%;
+    }
+    
+}
+
+@media only screen and (width < 1024px) {
+    .leftContactHeader::before{
+		display: none;
+        /* box-shadow: 0 0 180px 90px var(--spot-color); */
+
+	}
+}

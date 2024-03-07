@@ -22,3 +22,13 @@
     padding: 0 10px;
     color: #191923;
 }
+
+@media only screen and (width < 675px) {
+    .heading{
+        font-size: 14px;
+    }
+    .heading::before{
+        font-size: 11px;
+        top: -17px;
+    }
+}

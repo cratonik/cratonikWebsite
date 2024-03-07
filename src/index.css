@@ -54,11 +54,46 @@ main {
 	color: #fff;
 	background-color: var(--secondary-blue);
 	padding: 20px 60px;
-	min-height: calc(100vh - 115px);
+	min-height: calc(200vh - 115px);
 	overflow-x: hidden;
 	border-radius: 20px;
 	margin: 10px 30px;
 	margin-top: 80px;
+	position: relative;
+	z-index: 1;
+}
+
+main::before{
+	content: '';
+	position: absolute;
+	display: block;
+	top: 30px;
+	left: 30px;
+	width: 0;
+    height: 0;
+    background-color: none; /* Change this to the desired color */
+    border-radius: 50%; /* Makes the element circular */
+    box-shadow: 0 0 180px 180px var(--spot-color);
+	z-index: -1;
+}
+
+main::after{
+	content: '';
+	position: absolute;
+	display: block;
+	top: 50%;
+	right: 30px;
+	width: 0px;
+    height: 0px;
+    background-color: none; /* Change this to the desired color */
+    border-radius: 50%;
+	box-shadow: 0 0 180px 120px var(--spot-color);
+	z-index: -1;
+}
+@media only screen and (width < 1024px) {
+	main::after, main::before{
+		display: none;
+	}
 }
 
 @media only screen and (width < 580px) {
