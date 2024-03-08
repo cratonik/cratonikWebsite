@@ -3,7 +3,7 @@ import person from '../../assets/image/CTA.png'
 
 const Testimonial = (props) => {
 
-    let personImage = props.img;
+    // let personImage = props.img;
 
     return(
         <div className={style.testimonial}>
