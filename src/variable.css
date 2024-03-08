@@ -1,9 +1,12 @@
-:root{
+:root {
     --spot-color: #f9b52e;
     --spot-hover: #ffd47e;
     --spot-light-hover: #f9b52e3b;
 
     --spot-glow: #f9b52e75;
+
+    --black-img: url(./assets/logos/transparent-black.png);
+    --white-img: url(./assets/logos/transparent-white.png);
 
     --primary-blue: #191923;
     --secondary-blue: #252532;

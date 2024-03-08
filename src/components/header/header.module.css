@@ -14,9 +14,11 @@ header {
 	color: #fff;
 	z-index: 9999;
 }
-a{
+
+a {
 	cursor: none !important;
 }
+
 .logo {
 	font-size: 30px;
 	text-transform: uppercase;
@@ -24,25 +26,40 @@ a{
 	display: flex;
 	align-items: center;
 }
+
 .logoimg {
 	width: 40px;
 	height: 40px;
 	display: block;
-	background: url("../../assets/image/logo-square-white.png");
-	background-size: cover;
-	margin-right: 10px;
+	background: var(--black-img);
+	background-size: 90%;
+	background-repeat: no-repeat;
 }
+
+.logobackground {
+	background-color: var(--spot-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 10px;
+	border-radius: 2px;
+	padding: 3px;
+}
+
 header ul {
 	display: flex;
 }
+
 header ul li {
 	margin-right: 30px;
 	cursor: pointer;
 	padding: 3px 10px;
 }
-header ul li:hover{
+
+header ul li:hover {
 	color: var(--spot-color);
 }
+
 header ul li:last-child {
 	margin-right: 0;
 }
@@ -51,14 +68,17 @@ header ul li:last-child {
 	display: flex;
 	align-items: center;
 }
+
 .menu {
 	display: none;
 }
+
 @media only screen and (width < 1000px) {
 	header {
 		justify-content: space-between;
 		padding: 0 40px;
 	}
+
 	header ul {
 		padding-top: 30px;
 		position: fixed;
@@ -76,9 +96,11 @@ header ul li:last-child {
 		border-bottom: 1px solid #ffffff2d;
 		width: 100%;
 	}
+
 	header ul li:hover {
 		background-color: rgba(255, 255, 255, 0.116);
 	}
+
 	.menuIcon {
 		display: block;
 		width: 25px;
@@ -87,6 +109,7 @@ header ul li:last-child {
 		position: relative;
 		cursor: pointer;
 	}
+
 	.menu {
 		cursor: pointer;
 		height: 20px;
@@ -106,6 +129,7 @@ header ul li:last-child {
 		justify-content: space-between;
 
 	}
+
 	header ul {
 		top: 50px;
 	}
@@ -113,12 +137,14 @@ header ul li:last-child {
 	.logo {
 		font-size: 18px;
 	}
+
 	.logoimg {
 		width: 20px;
 		height: 20px;
 		margin-left: -20px;
 	}
-	.menu{
+
+	.menu {
 		margin-left: 18px;
 		margin-right: -15px;
 	}

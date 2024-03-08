@@ -14,9 +14,11 @@ const Header = () => {
 
 	return (
 		<header>
-			
+
 			<Link to="/" className={style.logo}>
-				<div className={style.logoimg}></div>
+				<div className={style.logobackground}>
+					<div className={style.logoimg}></div>
+				</div>
 				Cratonik
 			</Link>
 			<ul className={style.menuOpener} style={{ right: menu }}>
