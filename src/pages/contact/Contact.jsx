@@ -4,6 +4,8 @@ import style from './contact.module.css'
 import Testimonial from '../../components/Testimonial/Testimonial'
 // import HollowButton from '../../components/hollowButton/HollowButton'
 // import BoldButton from '../../components/BoldButton/BoldButton'
+import Marquee from 'react-fast-marquee'
+
 
 const Contact = () => {
   return (
@@ -21,16 +23,23 @@ const Contact = () => {
         </div>
         {/* <marquee className={style.moveTest}> */}
         <div className={style.movingTestimonial}>
-          <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
-          <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
-          <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
-          
-          <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
-        <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
-        <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
-        <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
-          
-          <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
+
+          <Marquee style={{zIndex: -2}}>
+            <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
+            <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
+            <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
+            <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
+            <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
+          </Marquee>
+        
+          <Marquee style={{paddingLeft:'100px', zIndex: -2}}>
+            <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
+            <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
+            <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
+            <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
+            <Testimonial review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nam dolorum tenetur cupiditate, quae provident adipisci fuga ad? Ratione quas expedita aliquid eos, eius ut quos fugiat sit id cupiditate!" img="../../assets/image/CTA.png" name="Chaitanya Shimpi" title="CEO, Cratonik"/>
+          </Marquee>
+
         </div>
         {/* </marquee> */}
 

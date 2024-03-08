@@ -1,12 +1,12 @@
 main{
   z-index: 1;
-    padding: 20px 150px;
 }
 .ContactHeader{
+    padding: 20px 0;
     height: 50vh;
-    /* background: url(https://source.unsplash.com/featured/300x201); */
     background-repeat: no-repeat; 
     position: relative;
+    overflow: hidden;
 }
 .leftContactHeader{
     height: 40vh;
@@ -45,16 +45,48 @@ main{
 
 .movingTestimonial{
     display: flex;
+    flex-direction: column;
     position: absolute;
     top: -150px;
-    right: -150px;
+    left: 0;
     z-index: -2;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 100%;
+    /* background-color: gray; */
+    overflow: hidden;
 }
-.movingTestimonial {
-    opacity: .2;
+.movingTestimonial::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    background-color: var(--secondary-blue);
+    z-index: 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 80px 70px var(--secondary-blue);
+    opacity: .98 ;
 }
+
+/* .moveingTestimonialUpperSection, .movingTestimonialBelowSection{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    animation: moveTestimonials 20s linear infinite
+} */
+
+/* @keyframes moveTestimonials {
+    0% {
+      transform: translateX(0); 
+    }
+     100% {
+      transform: translateX(-50%); 
+    } 
+  }
+
+.movingTestimonialBelowSection{
+    padding-left: 80px;
+} */
 @media only screen and (width < 675px) {
     main{
           padding: 20px;

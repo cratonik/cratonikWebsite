@@ -3,13 +3,14 @@
     /* background-color: grey; */
     padding: 10px;
     overflow: hidden;
+    margin: 20px;
 }
 .testimonial p{
     margin-bottom: 15px;
     font-size: 15px;
     text-align: justify;
     display: block;
-    width: 250px;
+    width: 100%;
 }
 .testimonialPerson{
     display: flex;

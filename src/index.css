@@ -29,6 +29,11 @@
 	background: #555;
 }
 
+::selection {
+    background-color: var(--spot-color); /* Change this to the desired color */
+    color: var(--secondary-blue); /* Change this to the desired text color */
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -53,7 +58,7 @@ body {
 main {
 	color: #fff;
 	background-color: var(--secondary-blue);
-	padding: 20px 60px;
+	/* padding: 20px 140px; */
 	min-height: calc(200vh - 115px);
 	overflow-x: hidden;
 	border-radius: 20px;
