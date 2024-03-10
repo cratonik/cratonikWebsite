@@ -3,7 +3,7 @@ import HeadingTitle from '../../components/HeadingTitle/HeadingTitle'
 import style from './contact.module.css'
 import Testimonial from '../../components/Testimonial/Testimonial'
 // import HollowButton from '../../components/hollowButton/HollowButton'
-// import BoldButton from '../../components/BoldButton/BoldButton'
+import BoldButton from '../../components/BoldButton/BoldButton'
 import Marquee from 'react-fast-marquee'
 
 
@@ -96,14 +96,50 @@ const Contact = () => {
 
             <input type="checkbox" id="checkbox8" />
             <label for="checkbox8">Social Media Marketing (SMM)</label>
-            
+
             <input type="checkbox" id="checkbox9" />
             <label for="checkbox8">Marketing</label>
           </div>
         </div>
         <div className={style.budget}>
           <h1>Budget Range</h1>
-          Hello
+          <div className={style.budgetSelection}>
+              <input type="radio" id="option1" name="options" />
+            <label for="option1">
+              <div className={style.labelSelect}></div>
+              <div>
+                <h4>ONGOING SUPPORT</h4>
+                <p>Hire Cratonik as an extension to the team</p>
+              </div>
+            </label>
+              <input type="radio" id="option2" name="options" />
+            <label for="option2">
+              <div className={style.labelSelect}></div>
+              <div>
+                <h4>STARTER</h4>
+                <p>₹10,000 - ₹18,000</p>
+              </div>
+            </label>
+              <input type="radio" id="option3" name="options" />
+            <label for="option3">
+              <div className={style.labelSelect}></div>
+              <div>
+                <h4>PREMIUM</h4>
+                <p>₹18,000 - ₹80,000</p>
+              </div>
+            </label>
+              <input type="radio" id="option4" name="options" />
+            <label for="option4">
+              <div className={style.labelSelect}></div>
+              <div>
+                <h4>ENTERPRISE</h4>
+                <p>₹80,000+</p>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div className={style.submitButton}>
+          <BoldButton text="Send Request"/> 
         </div>
       </div>
     </main>
