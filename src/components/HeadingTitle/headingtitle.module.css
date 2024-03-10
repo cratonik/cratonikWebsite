@@ -23,7 +23,14 @@
     color: #191923;
 }
 
-@media only screen and (width < 675px) {
+@media only screen and (width < 700px) {
+    
+    .heading::before{
+        left: 14%;
+    }
+}
+
+@media only screen and (width < 450px) {
     .heading{
         font-size: 14px;
     }

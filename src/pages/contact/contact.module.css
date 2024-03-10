@@ -1,58 +1,41 @@
 main{
   z-index: 1;
+  padding: 0 80px;
 }
 .ContactHeader{
     padding: 20px 0;
-    height: 50vh;
-    background-repeat: no-repeat; 
-    position: relative;
-    overflow: hidden;
+    height: fit-content;
+    /* overflow: hidden; */
+    display: flex;
 }
 .leftContactHeader{
     height: 40vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;  
-    
     position: relative;  
-}
-.leftContactHeader::before{
-    content: '';
-    position: absolute;
-    background-color: red;
-    width: 0;
-    height: 0;
-    display: block;
-    /* border-radius: 80%; */
-    box-shadow: 0 0 90px 0  var(--primary-blue),
-            0 0 40px 0 var(--primary-blue),
-            0 0 120px 100px var(--primary-blue);
-    z-index: -1;
+    flex-basis: 80vw;
+    height: 100%;
+    padding: 40px 0;
 }
 
 
-.leftContactHeader .contactme{
-    width: 30rem;
-    text-align: center;
-}
-.leftContactHeader .contactme span{
-    background-color: var(--spot-color);
-    color: var(--primary-blue);
-    padding: 0 5px;
-    text-transform: uppercase;
+
+ .contactme{
+    font-size: 2.3rem;
+    /* text-align: center; */
+    width: 70%;
 }
 
 .movingTestimonial{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: -150px;
-    left: 0;
-    z-index: -2;
-    width: 100%;
-    /* background-color: gray; */
+    flex-basis: 80%;
     overflow: hidden;
+    position: relative;
+    z-index: -2;
+    opacity: .5;
 }
 .movingTestimonial::after{
     content: '';
@@ -60,33 +43,35 @@ main{
     position: absolute;
     width: 65%;
     height: 100%;
-    background-color: var(--secondary-blue);
     z-index: 0;
     margin-left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0 0 80px 70px var(--secondary-blue);
     opacity: .98 ;
 }
+.testinomialGradient{
+    width: 30%;
+    height: 100%;
+    background-image: linear-gradient(90deg,#252532fb 3%,#25253294 20%,#2525322a);
+    margin-left: -5px;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: auto;
+}
+.testinomialGradient2{
+    width: 45%;
+    height: 104%;
+    background-image: linear-gradient(270deg,#252532fb,#25253294 42%,rgba(28,30,37,.73) 59%,#2525322a);
+    margin-top: -2px;
+    margin-bottom: -2px;
+    top: 0%;
+    bottom: 0%;
+    left: auto;
+    right: 0%;
+    position: absolute;
+}
 
-/* .moveingTestimonialUpperSection, .movingTestimonialBelowSection{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    animation: moveTestimonials 20s linear infinite
-} */
-
-/* @keyframes moveTestimonials {
-    0% {
-      transform: translateX(0); 
-    }
-     100% {
-      transform: translateX(-50%); 
-    } 
-  }
-
-.movingTestimonialBelowSection{
-    padding-left: 80px;
-} */
 @media only screen and (width < 675px) {
     main{
           padding: 20px;
@@ -100,6 +85,19 @@ main{
       }
 }
 
+@media only screen and (width < 700px){
+    .movingTestimonial{
+        display: none;
+    }
+    .leftContactHeader{
+        flex-basis: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactme{
+        text-align: center;
+    }
+}
 @media only screen and (width < 400px){
     .ContactHeader, .leftContactHeader{
         height: 23vh;
@@ -114,7 +112,9 @@ main{
 @media only screen and (width < 1024px) {
     .leftContactHeader::before{
 		display: none;
-        /* box-shadow: 0 0 180px 90px var(--spot-color); */
-
 	}
+    .contactme{
+        width: 100%;
+        font-size: 1.8rem;
+    }
 }

@@ -12,7 +12,7 @@ header {
 	right: 0;
 	background: var(--primary-blue);
 	color: #fff;
-	z-index: 9999;
+	z-index: 9998;
 }
 
 a {
@@ -139,9 +139,8 @@ header ul li:last-child {
 	}
 
 	.logoimg {
-		width: 20px;
-		height: 20px;
-		margin-left: -20px;
+		width: 23px;
+		height: 23px;
 	}
 
 	.menu {

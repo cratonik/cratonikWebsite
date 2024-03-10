@@ -58,7 +58,7 @@ body {
 main {
 	color: #fff;
 	background-color: var(--secondary-blue);
-	/* padding: 20px 140px; */
+	padding: 20px 140px;
 	min-height: calc(200vh - 115px);
 	overflow-x: hidden;
 	border-radius: 20px;
