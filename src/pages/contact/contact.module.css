@@ -1,10 +1,10 @@
 main{
   z-index: 1;
-  padding: 0 80px;
+  padding: 40px 80px;
 }
 .ContactHeader{
     padding: 20px 0;
-    height: fit-content;
+    height: max-content;
     /* overflow: hidden; */
     display: flex;
 }
@@ -112,6 +112,10 @@ main{
 .projectDetails label{
     font-size: 1.5rem;
 }
+label span{
+    color: rgb(245, 93, 93);
+    font-weight: 500;
+}
 .projectDetails textarea{
     background-color: var(--primary-blue);
     outline: none;
@@ -121,6 +125,49 @@ main{
     font-weight: 500;
     border-radius: 2px;
     resize: none;
+}
+.formProducts{
+    display: flex;
+    flex-direction: column;
+}
+.leftOverFormSection h1{
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+.leftOverFormSection span{
+    color: rgba(255, 255, 255, 0.274);
+    font-size: 12px;
+    letter-spacing: .3px;
+}
+.serviceList, .budget{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.serviceList input{
+    display: none;
+}
+.serviceList label{
+    border: 1px solid #ffffff34;
+    margin: 10px 20px;
+    margin-left: 0;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.serviceList label:hover{
+    background-color: var(--spot-color);
+    color: var(--secondary-blue);
+}
+
+input[type="checkbox"]:checked + label {
+    /* Your styles for checked checkbox */
+    background-color: var(--spot-color); 
+    color: var(--primary-blue);
+}
+
+.budget{
+    flex-direction: column;
 }
 @media only screen and (width < 675px) {
     main{
