@@ -19,6 +19,29 @@ const Contact = () => {
           
           {/* Form Section */}
 
+          <div className={style.leftformPart}>
+            <h4>Let's get connected!!</h4>
+
+            <div className={style.formNameSection}>
+              <div className={style.fname}>
+                <label htmlFor="fname">First Name *</label>
+                <input type="text" name="fname" id="fname" required placeholder='Chaitanya'/>
+              </div>
+              <div className={style.lname}>
+                <label htmlFor="fname">Last Name *</label>
+                <input type="text" name="fname" id="fname" required placeholder='Shimpi'/>
+              </div>
+            </div>
+            <div className={style.formEmailSection}>
+              <label htmlFor="email">Email *</label>
+              <input type="email" name="email" id="email" required placeholder='mail@mail.com'/>
+            </div>
+            <div className={style.projectDetails}>
+              <label htmlFor="description">Project Details:</label>
+              <textarea name="" id="" cols="30" rows="5" placeholder='Enter any project specific details...'></textarea>
+            </div>
+          </div>
+          
 
         </div>
         {/* <marquee className={style.moveTest}> */}
