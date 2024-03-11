@@ -1,0 +1,9 @@
+.faqSection{
+    height: 40vh;
+    display: flex;
+    margin-top: 90px;
+    background-color: var(--spot-color);
+}
+.faqTitle{
+    flex-basis: 40%;
+}

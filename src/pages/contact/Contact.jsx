@@ -2,9 +2,9 @@ import React from 'react'
 import HeadingTitle from '../../components/HeadingTitle/HeadingTitle'
 import style from './contact.module.css'
 import Testimonial from '../../components/Testimonial/Testimonial'
-// import HollowButton from '../../components/hollowButton/HollowButton'
 import BoldButton from '../../components/BoldButton/BoldButton'
 import Marquee from 'react-fast-marquee'
+import Faq from '../../components/FAQ/Faq'
 
 
 const Contact = () => {
@@ -98,7 +98,7 @@ const Contact = () => {
             <label for="checkbox8">Social Media Marketing (SMM)</label>
 
             <input type="checkbox" id="checkbox9" />
-            <label for="checkbox8">Marketing</label>
+            <label for="checkbox9">Marketing</label>
           </div>
         </div>
         <div className={style.budget}>
@@ -142,6 +142,7 @@ const Contact = () => {
           <BoldButton text="Send Request"/> 
         </div>
       </div>
+      <Faq/>
     </main>
   )
 }
