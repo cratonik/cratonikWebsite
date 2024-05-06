@@ -4,7 +4,7 @@ import style from './contact.module.css'
 import Testimonial from '../../components/Testimonial/Testimonial'
 import BoldButton from '../../components/BoldButton/BoldButton'
 import Marquee from 'react-fast-marquee'
-import Faq from '../../components/FAQ/Faq'
+// import Faq from '../../components/FAQ/Faq'
 
 
 const Contact = () => {
@@ -142,7 +142,7 @@ const Contact = () => {
           <BoldButton text="Send Request"/> 
         </div>
       </div>
-      <Faq/>
+      {/* <Faq/> */}
     </main>
   )
 }

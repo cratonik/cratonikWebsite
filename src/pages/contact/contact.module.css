@@ -371,8 +371,6 @@ input[type="radio"]:checked+label .labelSelect {
     }
     .budgetSelection label{
         flex-basis: 25%;
-        /* min-width: 100%; */
         margin-right: 40px;
-        
     }
 }

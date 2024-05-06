@@ -58,7 +58,7 @@ main {
 	color: #fff;
 	background-color: var(--secondary-blue);
 	/* padding: 20px 140px; */
-	min-height: calc(200vh - 115px);
+	min-height: calc(100vh - 115px);
 	overflow-x: hidden;
 	border-radius: 20px;
 	margin: 10px 30px;
