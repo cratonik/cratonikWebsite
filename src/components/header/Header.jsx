@@ -29,7 +29,7 @@ const Header = () => {
 					<Link to="/">Solutions</Link>
 				</li>
 				<li onClick={() => setmenu('-100%')}>
-					<Link to="/">Pricing</Link>
+					<Link to="/contact">Pricing</Link>
 				</li>
 				<li onClick={() => setmenu('-100%')}>
 					<Link to="/">Journal</Link>
